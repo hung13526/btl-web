@@ -42,21 +42,37 @@ switchToLogin.addEventListener("click", (e) => {
   registerForm.style.display = "none";
   loginForm.style.display = "block";
 });
-const links = document.querySelectorAll(".tieude a");
-const mainImage = document.getElementById("mainImage");
+function changeContent(type, event) {
+  event.preventDefault(); // Ngăn load lại trang
+  const mainImage = document.getElementById("mainImage");
 
-links.forEach(link => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
+  let newSrc = "";
+  switch (type) {
+    case "weddings":
+      newSrc = "/img/Trang-chu/ah1.avif"; // đúng tên file bạn có
+      break;
+    case "meetings":
+      newSrc = "/img/trang-chu/ah2.avif";
+      break;
+    case "penfolds":
+      newSrc = "/img/Trang-chu/ah3.avif";
+      break;
+    case "dining":
+      newSrc = "/img/Trang-chu/ah4.avif";
+      break;
+  }
 
-    const newSrc = this.getAttribute("data-img");
+  console.log("Ảnh mới:", newSrc); // test xem đường dẫn đúng chưa
 
-    // fade out
-    mainImage.classList.remove("active");
+  // Đổi ảnh kèm hiệu ứng mờ
+  mainImage.classList.remove("active");
+  setTimeout(() => {
+    mainImage.src = newSrc;
+    mainImage.classList.add("active");
+  }, 300);
+}
+const menuLinks = document.querySelectorAll("nav a");
 
-    setTimeout(() => {
-      mainImage.src = newSrc;
-      mainImage.classList.add("active");
-    }, 400); // khớp với transition CSS
-  });
-});
+
+
+

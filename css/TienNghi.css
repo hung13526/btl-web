@@ -1,12 +1,13 @@
-
+*{
+    margin:0;
+    padding: 0;
+}
 body {
   background-color: #eae7e7;
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   color: #2d2c2c;
   line-height: 1.6;
-  
 }
 /* Thanh trên cùng */
 .topbar {
@@ -172,14 +173,21 @@ body {
   to   { opacity: 1; transform: scale(1); }
 }
 
-.login-buttons a:hover {
-  text-decoration: underline;
+p{
+    text-align: center;
 }
-
+h2 {
+  text-align: center; 
+}
 .tem h2{
   padding:auto;
 }
-
+h1 {
+  font-size: 48px;   /* mặc định khoảng 2em, bạn có thể tăng */
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
 nav {
   position: relative; /* rất quan trọng để nút bám vào nav */
 }
@@ -197,7 +205,6 @@ nav a{
     font-family:Arial, sans-serif;
     text-transform:uppercase;
     text-decoration: none;
-
 }
 nav a:hover {
   color: #8b5a3c;
@@ -218,169 +225,191 @@ nav .btn {
   border-radius: 4px;
   font-weight: bold;
 }
-
-.slide-show{
-  position: relative;
-  width: 1130px;
-  display: flex;
-  margin: 30px auto;
-  overflow: hidden;
+.carousel {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
 }
-.slide-fade{
-  display: flex;
-  transition: transform 0.7s ease-in-out;
+.carousel img {
+      width: 100%;
+      display: none;
 }
-
-.slide-fade img{
-    width: 1130px;
-    height: 550px;
-    flex-shrink: 0;
-    
+.carousel img.active {
+      display: block;
 }
-.button{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #ffffff;
-  background: none;
-  border: none;
-  font-size: 40px;
-  cursor: pointer;
- opacity: 0.5;
+/* Nút điều hướng */
+.nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 20px;
 }
-.button:hover{
-  color: #5e5d5d;
+.nav-btn.left {
+      left: 10px;
 }
-#left{
-  left: 15px;
+.nav-btn.right {
+      right: 10px;
 }
-#right{
-  right: 15px;
-}
-
-p a{
-  text-decoration: none;
-  color: #000;
-}
-p a:hover{
-  text-decoration: underline;
+/* Bộ đếm */
+.counter {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
 }
 
 
-.content1 h2{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 48px;
-  font-weight: normal;
-  margin:0;
-}
-.content1{
-  margin: 0 100px;
-  max-width: 800px;
-  font-size: 18px;
-}
+.container {
+      display: flex;
+      width: 100%;
+      height: 500px;
+    }
 
-.dining{
-  display: flex;
-  width: 100%;
-  height: 100vh;
-}
-.menu{
-  width: 30%;
-  background-color: #e4dfdf;
-  padding: 180px 120px;
-  box-sizing: border-box;
-
-}
-
-.menu ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu ul li{
-  font-size: 18px;
-  margin: 20px auto;
-  padding: 5px 0;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
-.menu ul li.active {
-      border-bottom: 2px solid #a0522d;
+    /* Sidebar bên trái */
+    .sidebar {
+      width: 25%;
+      background-color: #f8f8f8;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .tab {
+      font-size: 14px;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #333;
+      border: none;
+      background: none;
+      text-align: left;
+      padding: 5px 0;
+    }
+    .tab.active {
       font-weight: bold;
-}
+      border-bottom: 2px solid #6a4c3a;
+      color: #6a4c3a;
+    }
 
-.content2{
-  position: relative;
-  width: 70%;
-}
+    /* Nội dung bên phải */
+    .content {
+      width: 75%;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content-box {
+      background-color: white;
+      padding: 30px;
+      max-width: 500px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .content-box h2 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #333;
+    }
+    .content-box p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #444;
+    }
+    .content-box a {
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
 
-.tab{
-  display: none;
-  width: 100%;
-  height: 100%;
-  position:relative;
-  
-}
 
-.tab.active{
-  display: block;
-  height: 100%;
-}
-.tab img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
+    .features-section {
+      padding: 40px 80px;
+    }
+    .features-section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px 40px;
+    }
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+      color: #333;
+    }
+    .feature i {
+      font-size: 22px;
+      color: #444;
+      width: 26px; /* giữ icon đều nhau */
+      text-align: center;
+    }
+    h3{
+      margin: 20px;
+    }
 
-.tab .text{
-  position: absolute;
-  background-color: #fff;
-  padding : 30px 45px;
-  top: 50%;
-  left: 35%;
-  right: 15%;
-  transform: translateY(-50%);
-  max-width: 600px;
-  display:inline-block ;
-}
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+    }
 
-.tab .text h3{
-  font-size: 30px;
-  margin: 10px 0;
-  margin-bottom: 10px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: normal;
-}
-.tab .text .p{
-  font-size: 16px;
-  line-height: 1.6;
-}
+    .accordion {
+      margin-left: 50px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
 
-.content3{
-  max-width: 1200px;
-  margin: 20px auto;
-  text-align: center;
-}
-.content3 img{
-  width: 100%;
-  max-width: 1100px;
-  padding: 20px 0;
-}
-.content3 p{
-  font-size: 16px;
-}
-.content3 h2{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 48px;
-  font-weight: normal;
-}
-.content3 p, h2{
-  text-align: justify;
-  margin: 10px 70px;
-  max-width: 600px;
-}
-.breadcrumb {
+    .accordion-item {
+      border-bottom: 1px solid #eee;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .accordion-header i {
+      transition: transform 0.3s;
+    }
+
+    .accordion-header.active i {
+      transform: rotate(180deg);
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      font-size: 15px;
+      color: #555;
+      padding-left: 10px;
+    }
+
+    .accordion-content p {
+      margin: 10px 0;
+    }
+
+
+    .breadcrumb {
       display: flex;
       align-items: center;
       border-top: 1px solid #ccc;
@@ -399,22 +428,7 @@ p a:hover{
       color: #000;
       font-weight: bold;
     }
-/* Map */
-.map {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.map iframe {
-  width: 80%;
-  height: 350px;
-  border: 0;
-  border-radius: 8px;
-  display: block;
-}
-/* Footer */
-footer {
+    footer {
       background: #fff;
       border-top: 1px solid #ccc;
       margin-top: 30px;
