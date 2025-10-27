@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InterContinental Hanoi Westlake</title>
+    <link rel="stylesheet" href="/khachdoan&sukien/offer.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <!-- Bên trái -->
+      <div class="logo">
+        <img src="/logoks.jpg" alt="Logo khách sạn">
+        <span>INTERCONTINENTAL<br> HANOI WESTLAKE</span>
+      </div>
+
+      <!-- Bên phải -->
+      <div class="right-section">
+        <div class="contact-icons">
+          <div class="inbox">
+          <script src="https://uhchat.net/code.php?f=99647b"></script>
+        </div>
+          <a href="tel:+84000000000">📞 00 612 8317 6253 - Trò chuyện với chúng tôi</a>
+        </div>
+        <div class="login-buttons">
+          <a href="#" id="openLogin">Đăng nhập</a> / 
+          <a href="#" id="openRegister">Tham gia</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+
+        <!-- Form đăng nhập -->
+        <div id="loginForm">
+          <h2>Đăng nhập</h2>
+          <form>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng nhập</button>
+          </form>
+          <p>Chưa có tài khoản? <a href="#" id="switchToRegister">Đăng ký</a></p>
+        </div>
+
+        <!-- Form đăng ký -->
+        <div id="registerForm" style="display:none;">
+          <h2>Đăng ký</h2>
+          <form>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng ký</button>
+          </form>
+          <p>Đã có tài khoản? <a href="#" id="switchToLogin">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+     <!-- Navigation -->
+    <nav>
+      <ul>
+        <li>
+          <a href="/trangchu/trang-chu.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+
+        <li><a href="/phòng/Phong.html">Phòng Ở</a></li>
+        <li><a href="/tiennghi/TienNghi.html">Tiện Nghi</a></li>
+        <li><a href="/anuong/an-uong.html">Ăn Uống</a></li>
+        <li><a href="/hinhanh/hinhhanh.html">Hình Ảnh</a></li>
+        <li><a href="/khachdoan&sukien/offer.html">Khách Đoàn & Sự Kiện</a></li>
+      </ul>
+      <button class="btn">Xem giá</button>
+    </nav>
+
+    <!-- Slider Section -->
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="slide"><img src="offer/hinh1.avif" alt="Slide 1" /></div>
+        <div class="slide"><img src="offer/hinh2.avif" alt="Slide 2" /></div>
+        <div class="slide"><img src="offer/hinh3.avif" alt="Slide 3" /></div>
+        <div class="slide"><img src="offer/hinh4.avif" alt="Slide 4" /></div>
+        <div class="slide"><img src="offer/hinh5.avif" alt="Slide 5" /></div>
+        <div class="slide"><img src="offer/hinh6.avif" alt="Slide 6" /></div>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h4>INTERCONTINENTAL HANOI WESTLAKE</h4>
+      <h2>Hội họp & Sự kiện</h2>
+      <p>
+        Đội ngũ quan tâm và tận tâm của chúng tôi luôn sẵn sàng phục vụ để đảm
+        bảo cuộc họp hoặc sự <br />
+        kiện của bạn diễn ra suôn sẻ. Dù sự kiện của bạn mang tính thân mật hay
+        hoành tráng,<br />
+        InterContinental Hanoi Westlake đều có các phòng chức năng và không gian
+        hội họp để làm cho <br />
+        sự kiện trở nên sống động.
+      </p>
+      <div class="intro-links">
+        <p class="download">Download floor plan</p>
+        <p class="download">Tải về thực đơn cung ứng tiệc</p>
+      </div>
+
+      <!-- Nút yêu cầu -->
+      <a href="#" class="cta-request">Yêu cầu đề xuất</a>
+    </section>
+
+    <!-- Event Info -->
+    <section class="event-info">
+      <div class="event-info-container">
+        <!-- Khối chữ bên trái -->
+        <div class="info-left">
+          <h3>Họp mặt vì điều tốt đẹp</h3>
+          <hr />
+          <p>Hội họp & sự kiện</p>
+          <p class="x">Đám cưới</p>
+        </div>
+
+        <!-- Khối chữ đè lên ảnh bên phải -->
+        <div class="info-text">
+          <h3>HỌP MẶT VÌ ĐIỀU TỐT ĐẸP</h3>
+          <p>
+            Lên kế hoạch cho một trải nghiệm hội họp bền <br />
+            vững hơn tại InterContinental Hanoi Westlake
+          </p>
+          <a href="#">Tìm hiểu thêm ➝</a>
+        </div>
+
+        <!-- Ảnh bên phải -->
+        <div class="info-img">
+          <img src="offer/eventinfo.avif" alt="Grand Ballroom" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms list -->
+    <section class="rooms">
+      <div class="room">
+        <div class="room-box"><h4>Phòng tiệc Grand</h4></div>
+        <div class="room-box">
+          <p>
+            Grand Ballroom là nơi lý tưởng cho các sự kiện, hội thảo hoặc đám
+            cưới với sức chứa lên đến 450 khách. Trung tâm hội nghị được thiết
+            kế theo phong cách Việt Nam hiện đại và cung cấp tiện ích hỗ trợ
+            kinh doanh mới nhất bao gồm cả Internet không dây.
+          </p>
+        </div>
+        <div class="room-box">
+          <span
+            >Tầng 1 <br />
+            450 khách</span
+          >
+        </div>
+      </div>
+
+      <div class="room">
+        <div class="room-box"><h4>Phòng khiêu vũ Tiền sảnh chức năng</h4></div>
+        <div class="room-box">
+          <p>
+            Để biết thêm thông tin về phòng họp này, vui lòng liên hệ với khách
+            sạn.
+          </p>
+        </div>
+        <div class="room-box">
+          <span
+            >Tầng 1 <br />
+            250 khách</span
+          >
+        </div>
+      </div>
+
+      <div class="room">
+        <div class="room-box"><h4>Cuộc họp Westlake 1 & 2</h4></div>
+        <div class="room-box">
+          <p>
+            Để biết thêm thông tin về phòng họp này, vui lòng liên hệ với khách
+            sạn.
+          </p>
+        </div>
+        <div class="room-box">
+          <span
+            >Tầng trệt <br />
+            90 khách</span
+          >
+        </div>
+      </div>
+
+      <div class="room">
+        <div class="room-box"><h4>Cuộc họp Westlake 3 & 4</h4></div>
+        <div class="room-box">
+          <p>
+            Để biết thêm thông tin về phòng họp này, vui lòng liên hệ với khách
+            sạn.
+          </p>
+        </div>
+        <div class="room-box">
+          <span
+            >Tầng trệt <br />
+            70 khách</span
+          >
+        </div>
+      </div>
+
+      <div class="room">
+        <div class="room-box"><h4>Westlake Tiền sảnh chức năng</h4></div>
+        <div class="room-box">
+          <p>
+            Để biết thêm thông tin về phòng họp này, vui lòng liên hệ với khách
+            sạn.
+          </p>
+        </div>
+        <div class="room-box">
+          <span
+            >Tầng Trệt <br />
+            250 khách</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="services-box">
+        <h3 class="services-title">Chúng tôi sẵn lòng phục vụ quý khách</h3>
+        <ul class="services-list">
+          <li>Hỗ trợ đa phương tiện + nghe nhìn toàn diện</li>
+          <li>Có đồ dùng văn phòng cho phòng họp</li>
+          <li>Shipping available</li>
+          <li>Dịch vụ đăng ký cuộc họp</li>
+          <li>Printing services</li>
+          <li>Máy quét</li>
+          <li>Dịch vụ fax</li>
+          <li>Dịch vụ Sao chụp</li>
+          <li>Máy in</li>
+          <li>Lấy đồ giặt khô hoặc giặt tay</li>
+          <li>Giặt khô trong ngày</li>
+          <li>Truy cập Wi-Fi trong toàn bộ khách sạn</li>
+          <li>Có hỗ trợ lên kế hoạch tổ chức sự kiện</li>
+          <li>Có dịch vụ ăn uống</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <div class="breadcrumb">
+    <span class="home-icon">🏠</span>
+    <span class="divider"></span>
+    <a href="/trangchu/trang-chu.html">Hanoi Khách sạn</a>
+    <hr>
+  </div>
+  <!-- Bản đồ -->
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7446.715690307023!2d105.82714824832158!3d21.058365245730304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aa5504cf4f8d%3A0x38355eb7fe4e696d!2sInterContinental%20Hanoi%20Westlake%20by%20IHG!5e0!3m2!1sen!2sus!4v1757723138687!5m2!1sen!2sus"
+      style="border:0; width:100%; height:400px;"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Phương tiện truyền thông xã hội</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1G617c1qgd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+  <a href="https://m.me/Dinh Danh Nam" target="_blank" rel="noopener noreferrer">
+  <i class="fa-brands fa-facebook-messenger"></i>
+</a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Công ty</h4>
+        <ul>
+          <li><a href="#">Giới thiệu về InterContinental</a></li>
+          <li><a href="#">Truy cập cho tất cả</a></li>
+          <li><a href="#">Trò chuyện với chúng tôi</a></li>
+          <li><a href="#">InterContinental Mobile</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">Thương hiệu toàn cầu IHG</a></li>
+          <li><a href="#">Phát triển khách sạn</a></li>
+          <li><a href="#">Danh bạ khách sạn</a></li>
+          <li><a href="#">Chương trình liên kết</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">Giới thiệu về IHG</a></li>
+          <li><a href="#">Trung tâm Quyền riêng tư và Cookie</a></li>
+          <li><a href="#">Không bán hoặc chia sẻ thông tin cá nhân của tô</a></li>
+          <li><a href="#">Lựa chọn quảng cáo</a></li>
+          <li><a href="#">Sự nghiệp tại IHG</a></li>
+          <li><a href="#">Nhận xét</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="final-footer">
+      <div class="best-price">
+        <h3>
+          BEST PRICE<br>
+          <span>GUARANTEE</span>
+        </h3>
+        <p>Đặt chỗ trực tuyến hoặc gọi điện:<br><strong>00 612 8317 6253</strong></p>
+      </div>
+
+      <div class="download-apps">
+        <div class="app-links">
+          <a href="#">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+          </a>
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+          </a>
+        </div>
+        <p>
+            Tải xuống ứng dụng IHG One Rewards<br>
+          <a href="#" style="font-weight:bold; text-decoration:underline;">Tìm hiểu thêm</a> về đặt phòng nhanh và Phần thưởng khi đang di chuyển
+        </p>
+      </div>
+    </div>
+
+    <div class="description">
+        Để đảm bảo mang đến cho bạn trải nghiệm tốt nhất trên trang web, chúng tôi sử dụng bản dịch máy cho một số phần nội dung được giới thiệu trên trang này.    </div>
+    <div class="copyright">
+      © 2025 IHG. Bảo lưu mọi quyền. Hầu hết các khách sạn đều do cá nhân sở hữu và vận hành.
+    </div>
+  </footer>
+    <script src="/khachdoan&sukien/offer.js"></script>
+  </body>
+</html>

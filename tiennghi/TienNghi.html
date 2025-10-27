@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InterContinental Hanoi Westlake</title>
+    <link rel="stylesheet" href="/tiennghi/TienNghi.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <!-- Bên trái -->
+      <div class="logo">
+        <img src="/logoks.jpg" alt="Logo khách sạn">
+        <span>INTERCONTINENTAL<br> HANOI WESTLAKE</span>
+      </div>
+
+      <!-- Bên phải -->
+      <div class="right-section">
+        <div class="contact-icons">
+          <div class="inbox">
+          <script src="https://uhchat.net/code.php?f=99647b"></script>
+        </div>
+          <a href="tel:+84000000000">📞 00 612 8317 6253 - Trò chuyện với chúng tôi</a>
+        </div>
+        <div class="login-buttons">
+          <a href="#" id="openLogin">Đăng nhập</a> / 
+          <a href="#" id="openRegister">Tham gia</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+
+        <!-- Form đăng nhập -->
+        <div id="loginForm">
+          <h2>Đăng nhập</h2>
+          <form>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng nhập</button>
+          </form>
+          <p>Chưa có tài khoản? <a href="#" id="switchToRegister">Đăng ký</a></p>
+        </div>
+
+        <!-- Form đăng ký -->
+        <div id="registerForm" style="display:none;">
+          <h2>Đăng ký</h2>
+          <form>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng ký</button>
+          </form>
+          <p>Đã có tài khoản? <a href="#" id="switchToLogin">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li>
+          <a href="/trangchu/trang-chu.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li><a href="/phòng/Phong.html">Phòng Ở</a></li>
+        <li><a href="/tiennghi/TienNghi.html">Tiện Nghi</a></li>
+        <li><a href="/anuong/an-uong.html">Ăn Uống</a></li>
+        <li><a href="/hinhanh/hinhhanh.html">Hình Ảnh</a></li>
+        <li><a href="/khachdoan&sukien/offer.html">Khách Đoàn & Sự Kiện</a></li>
+      </ul>
+      <button class="btn">Xem giá</button>
+    </nav>
+
+
+    <div class="carousel">
+        <img src="https://digital.ihg.com/is/image/ihg/intercontinental-hanoi-7097218255-2x1?wid=1100" class="active">
+        <img src="https://digital.ihg.com/is/image/ihg/intercontinental-hanoi-2531830432-2x1?wid=1100">
+        <img src="https://digital.ihg.com/is/image/ihg/intercontinental-hanoi-4070383712-2x1?wid=1100">
+        <img src="https://digital.ihg.com/is/image/ihg/intercontinental-hanoi-4068424105-2x1?wid=1100">
+        
+        <button class="nav-btn left" onclick="prevSlide()">&#8592;</button>
+        <button class="nav-btn right" onclick="nextSlide()">&#8594;</button>
+    </div>
+    <div class="counter" id="counter">1/4</div>
+
+
+    <h3>Khách sạn InterContinental Hà Nội Westlake</h3>
+    <h1>Tiện nghi</h1>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+        <button class="tab active" onclick="showTab(0)">Phòng chờ Club Intercontinental</button>
+        <button class="tab" onclick="showTab(1)">Quán bar hoàng hôn</button>
+        <button class="tab" onclick="showTab(2)">Trưởng phòng lễ tân</button>
+        <button class="tab" onclick="showTab(3)">Hồ bơi ngoài trời</button>
+        <button class="tab" onclick="showTab(4)">Câu lạc bộ sức khỏe</button>
+        </div>
+        <!-- Nội dung -->
+        <div class="content" id="content"></div>
+    </div>
+
+
+    <section class="features-section">
+    <h2>Tính năng của khách sạn</h2>
+    <div class="features-grid">
+      <div class="feature"><i class="fas fa-spray-can"></i>Dọn dẹp nhà cửa hàng ngày</div>
+      <div class="feature"><i class="fas fa-dumbbell"></i>Trung tâm thể dục</div>
+      <div class="feature"><i class="fas fa-blender"></i>Nhà bếp đầy đủ</div>
+      <div class="feature"><i class="fas fa-parking"></i>Bãi đậu xe tại chỗ</div>
+      <div class="feature"><i class="fas fa-swimmer"></i>Hồ bơi</div>
+      <div class="feature"><i class="fas fa-utensils"></i>6 nhà hàng tại chỗ</div>
+      <div class="feature"><i class="fas fa-wifi"></i>Wi-fi</div>
+    </div>
+  </section>
+
+
+  <h2>Tại khách sạn này</h2>
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Chi tiết khách sạn <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <p>Thông tin khách sạn<br>
+            Lễ tân:  84-24-62708888<br>
+            Đặt chỗ:  00 612 8317 6253 <br>
+            Email: Res.Hanoi@ihg.com<br>
+            Giờ nhận phòng: 3:00 chiều<br>
+            Giờ trả phòng: 12:00 trưa<br>
+            Có thể trả phòng trễ<br>
+            Độ tuổi tối thiểu để nhận phòng: 18<br>
+            Tổng số tầng:  5<br>
+            Tổng số phòng:  318<br>
+            Phòng dành cho người khuyết tật:   1<br>
+            Ngôn ngữ được nói: Tiếng Anh, Tiếng Pháp, Tiếng Hindi, Tiếng Nhật, Tiếng Punjabi<br>
+            Thẻ tín dụng được chấp nhận: American Express, Visa, MasterCard, Diners Club, Carte Blanche, JCB, China Union Pay<br>
+            Khả năng tiếp cận<br>
+            Chỗ ngồi nhà hàng<br>
+            Sự phù phiếm<br>
+            Buồng vệ sinh<br>
+            Bàn đăng ký<br>
+            Có xe lăn<br>
+            Nhà vệ sinh công cộng<br>
+            Tiện ích công cộng<br>
+            Thang máy tuân thủ ADA<br>
+        </p>  
+        </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Các hoạt động <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <p>
+            Hoạt động chung<br>
+            Tiệc tối<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Trung tâm thể  <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <p>
+            Giờ hoạt động: 12:00 sáng - 00:00 sáng<br>
+            Tạ tự do<br>
+            Người chèo thuyền<br>
+            Máy tập bước cầu thang<br>
+            Xe đạp tập thể dục<br>
+            Máy chạy bộ<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Golf  <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <p>
+            Câu lạc bộ đồng quê Legend Hill<br>
+            Nằm ngoài địa điểm<br>
+            Số lỗ: 36<br>
+            Điện thoại: 84-0-0246262925<br>
+        </p>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Bãi đậu xe và giao thông <i class="fas fa-chevron-down"></i>
+      </div>
+        <div class="accordion-content">
+            <p> 
+                Bãi đậu xe<br>
+                Đỗ xe tự phục vụ miễn phí hàng ngày<br>
+                Kiểm soát quyền truy cập vào bãi đậu xe<br>
+                Chỉ đỗ xe cho khách đã đăng ký<br>
+                Có bãi đậu xe<br>
+                Xe đưa đón sân bay<br>
+                Không có dịch vụ đưa đón tại Sân bay Quốc tế Nội Bài (HAN)<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Hồ bơi  <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <p>
+            Hồ bơi ngoài trời<br>
+            Địa điểm: Ngoài trời<br>
+            Giờ mở cửa: 7:00 sáng đến 7:00 tối<br>
+            Hồ bơi trẻ em<br>
+            Dịch vụ bên hồ bơi được cung cấp<br>
+            Dịch vụ khăn tắm<br>
+            Ô dù<br>
+            Nước/nước lọc<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        Dịch vụ  <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="accordion-content">
+        <p>
+            Dịch vụ kinh doanh<br>
+            Trung tâm thương mại 24 giờ<br>
+            Dịch vụ kinh doanh<br>
+            Dịch vụ fax<br>
+            Có sẵn đồ dùng văn phòng<br>
+            Dịch vụ in ấn<br>
+            Dịch vụ vận chuyển<br>
+            Dọn dẹp và giặt ủi<br>
+            Dọn dẹp nhà cửa hàng ngày<br>
+            Dịch vụ giặt khô hoặc giặt là<br>
+            Giặt khô trong ngày<br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+
+  <div class="breadcrumb">
+    <span class="home-icon">🏠</span>
+    <span class="divider"></span>
+    <a href="/trangchu/trang-chu.html">Khách sạn Hà Nội</a>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Phương tiện truyền thông xã hội</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1G617c1qgd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+  <a href="https://m.me/Dinh Danh Nam" target="_blank" rel="noopener noreferrer">
+  <i class="fa-brands fa-facebook-messenger"></i>
+</a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Công ty</h4>
+        <ul>
+          <li><a href="#">Giới thiệu về InterContinental</a></li>
+          <li><a href="#">Truy cập cho tất cả</a></li>
+          <li><a href="#">Trò chuyện với chúng tôi</a></li>
+          <li><a href="#">InterContinental Mobile</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">Thương hiệu toàn cầu IHG</a></li>
+          <li><a href="#">Phát triển khách sạn</a></li>
+          <li><a href="#">Danh bạ khách sạn</a></li>
+          <li><a href="#">Chương trình liên kết</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">Giới thiệu về IHG</a></li>
+          <li><a href="#">Trung tâm Quyền riêng tư và Cookie</a></li>
+          <li><a href="#">Không bán hoặc chia sẻ thông tin cá nhân của tô</a></li>
+          <li><a href="#">Lựa chọn quảng cáo</a></li>
+          <li><a href="#">Sự nghiệp tại IHG</a></li>
+          <li><a href="#">Nhận xét</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="final-footer">
+      <div class="best-price">
+        <h3>
+          BEST PRICE<br>
+          <span>GUARANTEE</span>
+        </h3>
+        <p>Đặt chỗ trực tuyến hoặc gọi điện:<br><strong>00 612 8317 6253</strong></p>
+      </div>
+
+      <div class="download-apps">
+        <div class="app-links">
+          <a href="#">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+          </a>
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+          </a>
+        </div>
+        <p>
+            Tải xuống ứng dụng IHG One Rewards<br>
+          <a href="#" style="font-weight:bold; text-decoration:underline;">Tìm hiểu thêm</a> về đặt phòng nhanh và Phần thưởng khi đang di chuyển
+        </p>
+      </div>
+    </div>
+
+    <div class="description">
+        Để đảm bảo mang đến cho bạn trải nghiệm tốt nhất trên trang web, chúng tôi sử dụng bản dịch máy cho một số phần nội dung được giới thiệu trên trang này.    </div>
+    <div class="copyright">
+      © 2025 IHG. Bảo lưu mọi quyền. Hầu hết các khách sạn đều do cá nhân sở hữu và vận hành.
+    </div>
+  </footer>
+  <script src="/tiennghi/TienNghi.js"></script>
+</body>
+</html>
+

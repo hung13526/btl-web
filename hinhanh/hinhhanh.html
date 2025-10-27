@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InterContinental Hanoi Westlake</title>
+    <link rel="stylesheet" href="/hinhanh/hinhanh.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <!-- Bên trái -->
+      <div class="logo">
+        <img src="/logoks.jpg" alt="Logo khách sạn">
+        <span>INTERCONTINENTAL<br> HANOI WESTLAKE</span>
+      </div>
+
+      <!-- Bên phải -->
+      <div class="right-section">
+        <div class="contact-icons">
+          <div class="inbox">
+          <script src="https://uhchat.net/code.php?f=99647b"></script>
+        </div>
+          <a href="tel:+84000000000">📞 00 612 8317 6253 - Trò chuyện với chúng tôi</a>
+        </div>
+        <div class="login-buttons">
+          <a href="#" id="openLogin">Đăng nhập</a> / 
+          <a href="#" id="openRegister">Tham gia</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+
+        <!-- Form đăng nhập -->
+        <div id="loginForm">
+          <h2>Đăng nhập</h2>
+          <form>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng nhập</button>
+          </form>
+          <p>Chưa có tài khoản? <a href="#" id="switchToRegister">Đăng ký</a></p>
+        </div>
+
+        <!-- Form đăng ký -->
+        <div id="registerForm" style="display:none;">
+          <h2>Đăng ký</h2>
+          <form>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng ký</button>
+          </form>
+          <p>Đã có tài khoản? <a href="#" id="switchToLogin">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li>
+          <a href="/trangchu/trang-chu.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li><a href="/phòng/Phong.html">Phòng Ở</a></li>
+        <li><a href="/tiennghi/TienNghi.html">Tiện Nghi</a></li>
+        <li><a href="/anuong/an-uong.html">Ăn Uống</a></li>
+        <li><a href="/hinhanh/hinhhanh.html">Hình Ảnh</a></li>
+        <li><a href="/khachdoan&sukien/offer.html">Khách Đoàn & Sự Kiện</a></li>
+      </ul>
+      <button class="btn">Xem giá</button>
+    </nav>
+  <p>InterContinental Hanoi Westlake</p>
+  <header>
+    <h1>Gallery</h1>
+  </header>
+
+  <!-- Khách sạn -->
+  <div class="temp">
+    <h2>Khách sạn</h2>
+  </div>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-slide"><img src="hinh-anh/anh1.avif" alt="ảnh1"></div>
+      <div class="carousel-slide"><img src="hinh-anh/anh2.avif" alt="ảnh2"></div>
+      <div class="carousel-slide"><img src="hinh-anh/anh3.avif" alt="ảnh3"></div>
+      <div class="carousel-slide"><img src="hinh-anh/anh4.avif" alt="ảnh4"></div>
+      <div class="carousel-slide"><img src="hinh-anh/anh5.avif" alt="ảnh5"></div>
+    </div>
+    <button class="carousel-prev">&#10094;</button>
+    <button class="carousel-next">&#10095;</button>
+    <p>Tổng quan về khách sạn</p>
+  </div>
+
+  <!-- Phòng ở -->
+  <div class="temp">
+    <h2>Phòng ở</h2>
+  </div>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-slide"><img src="hinh-anh/phong9.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/phong2.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/phong3.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/phong4.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/phong5.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/phong6.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/phong7.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/phong8.avif" alt="ảnh"></div>
+    </div>
+    <button class="carousel-prev">&#10094;</button>
+    <button class="carousel-next">&#10095;</button>
+  </div>
+
+  <!-- Tiện nghi -->
+  <div class="temp">
+    <h2>Tiện nghi</h2>
+  </div>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-slide"><img src="hinh-anh/tn1.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/tn2.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/tn3.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/tn4.avif" alt="ảnh"></div>
+    </div>
+    <button class="carousel-prev">&#10094;</button>
+    <button class="carousel-next">&#10095;</button>
+  </div>
+
+  <!-- Ăn uống -->
+  <div class="temp">
+    <h2>Ăn uống</h2>
+  </div>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-slide"><img src="hinh-anh/au1.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/au2.webp" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/au3.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/au4.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/au5.avif" alt="ảnh"></div>
+    </div>
+    <button class="carousel-prev">&#10094;</button>
+    <button class="carousel-next">&#10095;</button>
+  </div>
+
+  <!-- Khách đoàn -->
+  <div class="temp">
+    <h2>Khách đoàn & Hội họp</h2>
+  </div>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-slide"><img src="hinh-anh/kd1.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/kd2.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/kd3.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/kd4.avif" alt="ảnh"></div>
+    </div>
+    <button class="carousel-prev">&#10094;</button>
+    <button class="carousel-next">&#10095;</button>
+  </div>
+
+  <!-- Khu vực địa phương -->
+  <div class="temp">
+    <h2>Khu vực địa phương</h2>
+  </div>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-slide"><img src="hinh-anh/dp1.avif" alt="ảnh"></div>
+      <div class="carousel-slide"><img src="hinh-anh/pd2.avif" alt="ảnh"></div>
+    </div>
+    <button class="carousel-prev">&#10094;</button>
+    <button class="carousel-next">&#10095;</button>
+    <p>Điểm đến - Hà Nội</p>
+  </div>
+</div>
+    <div class="breadcrumb">
+    <span class="home-icon">🏠</span>
+    <span class="divider"></span>
+    <a href="phan1_2.html">Hanoi Khách sạn</a>
+    <hr>
+  </div>
+  <!-- Bản đồ -->
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7446.715690307023!2d105.82714824832158!3d21.058365245730304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aa5504cf4f8d%3A0x38355eb7fe4e696d!2sInterContinental%20Hanoi%20Westlake%20by%20IHG!5e0!3m2!1sen!2sus!4v1757723138687!5m2!1sen!2sus"
+      style="border:0; width:100%; height:400px;"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Phương tiện truyền thông xã hội</h4>
+        <div class="social-icons">
+<a href="https://www.facebook.com/share/1G617c1qgd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+  <a href="https://m.me/Dinh Danh Nam" target="_blank" rel="noopener noreferrer">
+  <i class="fa-brands fa-facebook-messenger"></i>
+</a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Công ty</h4>
+        <ul>
+          <li><a href="#">Giới thiệu về InterContinental</a></li>
+          <li><a href="#">Truy cập cho tất cả</a></li>
+          <li><a href="#">Trò chuyện với chúng tôi</a></li>
+          <li><a href="#">InterContinental Mobile</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">Thương hiệu toàn cầu IHG</a></li>
+          <li><a href="#">Phát triển khách sạn</a></li>
+          <li><a href="#">Danh bạ khách sạn</a></li>
+          <li><a href="#">Chương trình liên kết</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">Giới thiệu về IHG</a></li>
+          <li><a href="#">Trung tâm Quyền riêng tư và Cookie</a></li>
+          <li><a href="#">Không bán hoặc chia sẻ thông tin cá nhân của tô</a></li>
+          <li><a href="#">Lựa chọn quảng cáo</a></li>
+          <li><a href="#">Sự nghiệp tại IHG</a></li>
+          <li><a href="#">Nhận xét</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="final-footer">
+      <div class="best-price">
+        <h3>
+          BEST PRICE<br>
+          <span>GUARANTEE</span>
+        </h3>
+        <p>Đặt chỗ trực tuyến hoặc gọi điện:<br><strong>00 612 8317 6253</strong></p>
+      </div>
+
+      <div class="download-apps">
+        <div class="app-links">
+          <a href="#">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+          </a>
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+          </a>
+        </div>
+        <p>
+            Tải xuống ứng dụng IHG One Rewards<br>
+          <a href="#" style="font-weight:bold; text-decoration:underline;">Tìm hiểu thêm</a> về đặt phòng nhanh và Phần thưởng khi đang di chuyển
+        </p>
+      </div>
+    </div>
+
+    <div class="description">
+        Để đảm bảo mang đến cho bạn trải nghiệm tốt nhất trên trang web, chúng tôi sử dụng bản dịch máy cho một số phần nội dung được giới thiệu trên trang này.    </div>
+    <div class="copyright">
+      © 2025 IHG. Bảo lưu mọi quyền. Hầu hết các khách sạn đều do cá nhân sở hữu và vận hành.
+    </div>
+  </footer>
+<script src="/hinhanh/hinhanh.js"></script>
+</body>
+</html>

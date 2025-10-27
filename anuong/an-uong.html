@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ăn uống</title>
+    <link rel="stylesheet" href="/anuong/an-uong.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+            <!-- Topbar -->
+    <div class="topbar">
+      <!-- Bên trái -->
+      <div class="logo">
+        <img src="/logoks.jpg" alt="Logo khách sạn">
+        <span>INTERCONTINENTAL<br> HANOI WESTLAKE</span>
+      </div>
+
+      <!-- Bên phải -->
+      <div class="right-section">
+        <div class="contact-icons">
+          <div class="inbox">
+          <script src="https://uhchat.net/code.php?f=99647b"></script>
+        </div>
+          <a href="tel:+84000000000">📞 00 612 8317 6253 - Trò chuyện với chúng tôi</a>
+        </div>
+        <div class="login-buttons">
+          <a href="#" id="openLogin">Đăng nhập</a> / 
+          <a href="#" id="openRegister">Tham gia</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+
+        <!-- Form đăng nhập -->
+        <div id="loginForm">
+          <h2>Đăng nhập</h2>
+          <form>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng nhập</button>
+          </form>
+          <p>Chưa có tài khoản? <a href="#" id="switchToRegister">Đăng ký</a></p>
+        </div>
+
+        <!-- Form đăng ký -->
+        <div id="registerForm" style="display:none;">
+          <h2>Đăng ký</h2>
+          <form>
+            <input type="text" placeholder="Tên đăng nhập" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng ký</button>
+          </form>
+          <p>Đã có tài khoản? <a href="#" id="switchToLogin">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <nav>
+        <ul>
+            <!-- Icon ngôi nhà -->
+            <li>
+                <a href="/trangchu/trang-chu.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            <li><a href="/phòng/Phong.html">Phòng Ở</a></li>
+            <li><a href="/tiennghi/TienNghi.html">Tiện Nghi</a></li>
+            <li><a href="/anuong/an-uong.html">Ăn Uống</a></li>
+            <li><a href="/hinhanh/hinhhanh.html">Hình Ảnh</a></li>
+            <li><a href="/khachdoan&sukien/offer.html">Khách Đoàn & Sự Kiện</a></li>
+        </ul>
+        <button class="btn">Xem giá</button>
+    </nav>
+
+    <div class="slide-show">
+        <div class="slide-fade">
+            <img src="image-ks/an1.webp" alt="">
+            <img src="image-ks/an2.avif" alt="">
+            <img src="image-ks/an3.avif" alt="">
+            <img src="image-ks/an4.avif" alt="">
+            <img src="image-ks/an5.jpg" alt="">
+        </div>
+        <button id="left" class="button"> &#10094; </button>
+        <button id="right" class="button"> &#10095; </button>
+    </div>
+    <div class="content1">
+        <p>KHÁCH SẠN INTERCONTTINENTAL HANOI WESTLAKE</p>
+        <h2>Ăn uống</h2>
+        <p>Thưởng thức hương vị của bạn trong một hành trình ẩm thực khi bạn thưởng thức món Ý tại Milan,
+            kết hợp ẩm thực Việt Nam tại Sài Gòn, hoặc các món ăn cổ điển của Pháp tại quán bia của chúng
+            tôi, Cafe du Lac. Để bắt đầu hoặc kết thúc bữa ăn, hãy nhâm nhi một ly cocktail hoàng hôn tại
+            Sunset Bar và ngắm cảnh.
+        </p>
+        <p><b>Giờ ăn uống trong phòng: </b>12:00 AM - 12:00 AM </p>
+        <p><b><a href="#">Tải xuống Menu dịch vụ phòng</a></b></p>
+    </div>
+
+    <div class="dining">
+        <div class="menu">
+            <ul>
+                <li onclick="show(0)">Phòng chờ Penfolds</li>
+                <li onclick="show(1)">Ăn uống</li>
+                <li onclick="show(2)">Nhà hàng Sài Gòn</li>
+                <li onclick="show(3)">Nhà hàng Milan</li>
+                <li onclick="show(4)">Café Du Lạc</li>
+            </ul>
+        </div>
+
+        <div class="content2">
+            <div class="tab active">
+                <img src="image-ks/nha2.avif" alt="">
+                <div class="text">
+                    <h3>Phòng chờ Penfolds</h3>
+                    <p>Thưởng thức trải nghiệm ẩm thực đẳng cấp nhất tại Hà Nội tại Penfold Lounge.
+                        Thực đơn được thiết kế riêng và giới thiệu trực tiếp bởi Bếp trưởng của chúng tôi,
+                        cùng những loại rượu vang được tuyển chọn bởi chuyên gia rượu vang,
+                        mang đến một hành trình ẩm thực độc đáo. Những bữa tiệc này là lựa chọn hoàn hảo cho
+                        những buổi tối thân mật với số lượng khách lên đến 20 người. </p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <img src="image-ks/nha1.avif" alt="">
+                <div class="text">
+                    <h3>Ăn uống</h3>
+                    <p>Các lựa chọn ăn uống được thiết kế độc đáo và gần gũi của chúng tôi mang đến một loạt món ngon
+                        từ khắp nơi trên thế giới. Dù bạn muốn thưởng thức ẩm thực Ý, một brasserie cổ điển, món Việt
+                        Nam
+                        đích thực, hay nhâm nhi một ly cocktail khi hoàng hôn buông xuống, InterContinental Hanoi
+                        Westlake
+                        đều có tất cả.</p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <img src="image-ks/nha3.jpg" alt="">
+                <div class="text">
+                    <h3>Nhà hàng Sài Gòn</h3>
+                    <p>Mang đậm phong cách thiết kế Việt Nam đương đại, với những gian bếp mở ấn tượng
+                        được bao quanh bởi kính và tầm nhìn truyền cảm hứng ra đường chân trời thành phố không
+                        ngừng thay đổi. Nhà hàng phục vụ ẩm thực Việt Nam đích thực cùng các món đặc sản địa phương.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <img src="image-ks/nha4.avif" alt="">
+                <div class="text">
+                    <h3>Nhà hàng Milan</h3>
+                    <p>Nằm tại tầng hai của tòa nhà chính, nhà hàng là sự kết hợp hài hòa giữa phong cách châu Âu hiện
+                        đại
+                        và nét mộc mạc Á Đông, được điểm xuyết bằng những gam màu sinh động. Thưởng thức trọn vẹn sự
+                        cuốn hút
+                        khi chiêm ngưỡng các món Ý đích thực được chế biến ngay tại bếp mở, hoặc lựa chọn một trong
+                        những phòng ăn riêng
+                        để có trải nghiệm gần gũi và ấm cúng hơn.</p>
+                </div>
+            </div>
+
+            <div class="tab">
+                <img src="image-ks/nha7.avif" alt="">
+                <div class="text">
+                    <h3>Café Du Lac</h3>
+                    <p>Nhà hàng tọa lạc ngay bên Hồ Tây, mang phong cách thiết kế cổ điển
+                        tạo nên bầu không khí ấm cúng và gần gũi. Tại đây, bạn có thể thưởng thức
+                        buffet hấp dẫn cho bữa sáng, trưa và tối, cùng thực đơn gọi món đa dạng với
+                        nhiều món đặc trưng tại không gian ẩm thực phục vụ cả ngày.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content3">
+        <img src="image-ks/nha1.avif" alt="">
+        <h2>Nhà hàng Sài Gòn</h2>
+        <p><b>Ẩm thực: </b>Việt Nam</p>
+        <p><b>Vị trí: </b>Tầng 2</p>
+        <p><b>Điện thoại: </b>84-24-62708888</p>
+        <p>Nhà hàng Sài Gòn mang đến cho Hà Nội một khái niệm ẩm thực mới mẻ: 
+            sự kết hợp tươi ngon nhất của ẩm thực Việt Nam. Không gian nhà hàng nổi bật với thiết kế
+            Á Đông đương đại, bếp mở với những mảng kính ấn tượng và tầm nhìn truyền cảm hứng ra đường chân
+            trời đang đổi thay của thành phố.
+        </p>
+
+        <img src="image-ks/nha7.avif" alt="">
+        <h2>Café Du Lac</h2>
+        <p><b>Ẩm thực: </b>Quốc tế</p>
+        <p><b>Vị trí: </b>Tầng 1</p>
+        <p><b>Điện thoại: </b>84-24-62706666</p>
+        <p>Lấy cảm hứng từ những quán cà phê nổi tiếng của Pháp, Café du Lac mang khái niệm brasserie Pháp
+            đương đại đến với Hà Nội. Nhà hàng tọa lạc bên Hồ Tây, sở hữu thiết kế cổ điển tạo nên một bầu không khí
+            vừa thân thiện vừa tinh tế. Tại đây, thực khách có thể thưởng thức buffet sáng, trưa và tối hấp dẫn, cùng thực
+            đơn gọi món với nhiều món ăn đặc trưng tại không gian ẩm thực phục vụ cả ngày.
+        </p>
+        
+        <img src="image-ks/nha4.avif" alt="">
+        <h2>Nhà hàng Milan</h2>
+        <p><b>Ẩm thực: </b>Ý</p>
+        <p><b>Vị trí: </b>Tầng 2</p>
+        <p><b>Điện thoại:</b>84-24-62708866</p>
+        <p>Nhà hàng Milan là điểm đến hoàn hảo để thưởng thức ẩm thực Ý chuẩn vị trong không gian hiện đại.
+            Thực khách có thể lựa chọn nhiều món ăn đặc sắc, trong đó có pizza nướng lò củi trứ danh, và khám phá
+            bộ sưu tập phong phú các loại rượu vang Ý thượng hạng.
+        </p>
+
+        <img src="image-ks/bả.avif" alt="">
+        <h2>Sunset Bar</h2>
+        <p><b>Ẩm thực: </b>Quốc tế</p>
+        <p><b>Vị trí: </b>Trong khuôn viên khách sạn</p>
+        <p><b>Điện thoại: </b>84-24-62709999</p>
+        <p>Sunset Bar là điểm hẹn lý tưởng để thưởng thức cocktail, mang đến một trải nghiệm độc đáo khó nơi nào khác ở Hà Nội
+            có được. Nằm giữa ba gian nhà pavilions trong khung cảnh hồ tuyệt đẹp, quán bar được tiếp cận bằng lối đi bộ qua 
+            cây cầu duyên dáng</p>
+    </div>
+    <div class="breadcrumb">
+    <span class="home-icon">🏠</span>
+    <span class="divider"></span>
+    <a href="/trangchu/trang-chu.html">Hanoi Khách sạn</a>
+    <hr>
+  </div>
+  <!-- Bản đồ -->
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7446.715690307023!2d105.82714824832158!3d21.058365245730304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aa5504cf4f8d%3A0x38355eb7fe4e696d!2sInterContinental%20Hanoi%20Westlake%20by%20IHG!5e0!3m2!1sen!2sus!4v1757723138687!5m2!1sen!2sus"
+      style="border:0; width:100%; height:400px;"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Phương tiện truyền thông xã hội</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1G617c1qgd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+  <a href="https://m.me/Dinh Danh Nam" target="_blank" rel="noopener noreferrer">
+  <i class="fa-brands fa-facebook-messenger"></i>
+</a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Công ty</h4>
+        <ul>
+          <li><a href="#">Giới thiệu về InterContinental</a></li>
+          <li><a href="#">Truy cập cho tất cả</a></li>
+          <li><a href="#">Trò chuyện với chúng tôi</a></li>
+          <li><a href="#">InterContinental Mobile</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">Thương hiệu toàn cầu IHG</a></li>
+          <li><a href="#">Phát triển khách sạn</a></li>
+          <li><a href="#">Danh bạ khách sạn</a></li>
+          <li><a href="#">Chương trình liên kết</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul>
+          <li><a href="#">Giới thiệu về IHG</a></li>
+          <li><a href="#">Trung tâm Quyền riêng tư và Cookie</a></li>
+          <li><a href="#">Không bán hoặc chia sẻ thông tin cá nhân của tô</a></li>
+          <li><a href="#">Lựa chọn quảng cáo</a></li>
+          <li><a href="#">Sự nghiệp tại IHG</a></li>
+          <li><a href="#">Nhận xét</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="final-footer">
+      <div class="best-price">
+        <h3>
+          BEST PRICE<br>
+          <span>GUARANTEE</span>
+        </h3>
+        <p>Đặt chỗ trực tuyến hoặc gọi điện:<br><strong>00 612 8317 6253</strong></p>
+      </div>
+
+      <div class="download-apps">
+        <div class="app-links">
+          <a href="#">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+          </a>
+          <a href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+          </a>
+        </div>
+        <p>
+            Tải xuống ứng dụng IHG One Rewards<br>
+          <a href="#" style="font-weight:bold; text-decoration:underline;">Tìm hiểu thêm</a> về đặt phòng nhanh và Phần thưởng khi đang di chuyển
+        </p>
+      </div>
+    </div>
+
+    <div class="description">
+        Để đảm bảo mang đến cho bạn trải nghiệm tốt nhất trên trang web, chúng tôi sử dụng bản dịch máy cho một số phần nội dung được giới thiệu trên trang này.    </div>
+    <div class="copyright">
+      © 2025 IHG. Bảo lưu mọi quyền. Hầu hết các khách sạn đều do cá nhân sở hữu và vận hành.
+    </div>
+  </footer>
+  <script src="/anuong/an-uong.js"></script>
+</body>
+</html>
