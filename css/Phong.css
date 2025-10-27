@@ -213,7 +213,7 @@ nav a:hover {
 nav li{
     display:inline-block;/* trên cùng 1 hàng*/
 }
-nav .price-btn {
+nav .btn {
   position: absolute;
   right: 20px;      /* đẩy nút sang sát phải */
   top: 50%;         /* căn giữa theo chiều dọc */
