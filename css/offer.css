@@ -466,12 +466,13 @@ p {
 .info-text {
   position: absolute;
   top: 50%;
-  right: 100px; /* lệch phải */
+  right: 5%; /* lệch phải */
   transform: translateY(-50%);
   background-color: #fff;
-  padding: 50px; /* tăng padding để khung to hơn */
+  padding: 30px 35px; /* tăng padding để khung to hơn */
   border-radius: 8px;
-  max-width: 50%;
+  width: 40%;
+  max-width: 300px;
   text-align: left; /* chữ căn trái */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 2;
@@ -479,24 +480,26 @@ p {
 
 /* Typography khối chữ đè lên ảnh */
 .event-info .info-text h3 {
-  font-size: 32px;
-  font-weight: normal; /* không in đậm */
+  font-size: 22px;
+  font-weight: regular; 
   text-transform: uppercase; /* in hoa */
   margin-bottom: 1em; /* cách 1 dòng */
 }
 
 .event-info .info-text p {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 1em; /* cách 1 dòng */
   text-align: left !important;
 }
 
 .event-info .info-text a {
   text-decoration: none;
-  font-weight: bold 20px;
+  font-weight: 500;
+  font-size: 16px; 
   color: #000;
   display: block;
   margin-bottom: 1em;
+  font-weight: 600;
 }
 
 /* === ROOMS === */
@@ -750,4 +753,100 @@ footer {
   font-size: 13px;
   text-align: center;
   padding: 15px 20px;
+}
+
+/* === Bổ sung cho phần Event Info có nút chuyển ảnh === */
+
+/* Khung trắng bên phải — nằm trên ảnh, cách lề phải ảnh một khoảng */
+.info-text {
+  position: absolute;
+  top: 50%;
+  right: 5%; /* Cách mép phải ảnh khoảng 5% */
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 8px;
+  width: 45%; /* Giữ tỉ lệ hợp lý */
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.3s ease;
+}
+
+/* Giữ ảnh bên phải đúng vị trí gốc */
+.info-img {
+  position: relative;
+  width: 66.66%;
+  margin-left: auto;
+}
+
+/* Khối nút bên trái */
+.info-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Ẩn hr cũ để tự tạo gạch chân động */
+.info-left hr {
+  display: none;
+}
+
+/* Nút hiển thị bình thường */
+.event-btn {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  padding: 8px 0;
+  width: 100%;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.event-btn:hover {
+  color: #000;
+}
+
+/* Nút đang được chọn */
+.event-btn.active {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Gạch chân động dưới nút được chọn */
+.event-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  height: 2px;
+  background-color: #a77d4a;
+  border-radius: 1px;
+}
+
+/* Giảm kích thước chữ trong khung trắng */
+.info-text h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.info-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.info-text a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.info-text a:hover {
+  text-decoration: underline;
 }

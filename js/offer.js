@@ -153,3 +153,54 @@ window.addEventListener("load", () => {
   calcDimensions();
   updateCarousel(false);
 });
+
+// ======== Chuyển ảnh và nội dung khi nhấn nút bên trái ========
+
+// Mảng dữ liệu ảnh + nội dung
+const eventData = [
+  {
+    img: "https://digital.ihg.com/is/image/ihg/intercontinental-hanoi-7097218259-2x1",
+    title: "HỌP MẶT VÌ ĐIỀU TỐT ĐẸP",
+    text: `Lên kế hoạch cho một trải nghiệm hội họp bền <br>
+           vững hơn tại InterContinental Hanoi Westlake`,
+  },
+  {
+    img: "https://digital.ihg.com/is/image/ihg/intercontinental-hanoi-7097218268-2x1",
+    title: "HỘI HỌP & SỰ KIỆN",
+    text: `Các sự kiện độc đáo xứng đáng có những địa điểm độc đáo. 
+           Các không gian chức năng đa năng của chúng tôi luôn sẵn sàng 
+           đáp ứng nhu cầu của bạn, từ các cuộc họp kinh doanh trang trọng 
+           đến lễ kỷ niệm. Nhân viên lập kế hoạch và phục vụ ăn uống ở bên cạnh 
+           bạn sẽ chăm chút từng chi tiết, đảm bảo những trải nghiệm trân quý 
+           và đáng nhớ cho bạn và khách hoặc đồng nghiệp của bạn.`,
+  },
+  {
+    img: "https://digital.ihg.com/is/image/ihg/intercontinental-hanoi-4105979358-2x1",
+    title: "ĐÁM CƯỚI",
+    text: `Kỷ niệm ngày đặc biệt của bạn thật phong cách và sang trọng 
+           với Khu nghỉ dưỡng Lãng mạn nhất Việt Nam - InterContinental Hanoi Westlake, 
+           theo bình chọn của World Travel Awards. 
+           Bạn có nhiều lựa chọn để lựa chọn, bao gồm Phòng tiệc sang trọng 
+           của chúng tôi và Quán bar Sunset ngoài trời mang đậm hơi thở.`,
+  },
+];
+
+// Gọi các phần tử cần thao tác
+const eventBtns = document.querySelectorAll(".event-btn");
+const eventImg = document.querySelector(".info-img img");
+const infoTitle = document.querySelector(".info-text h3");
+const infoText = document.querySelector(".info-text p");
+
+// Gắn sự kiện cho từng nút
+eventBtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    // Xóa trạng thái active cũ
+    eventBtns.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // Cập nhật ảnh và nội dung
+    eventImg.src = eventData[index].img;
+    infoTitle.textContent = eventData[index].title;
+    infoText.innerHTML = eventData[index].text;
+  });
+});
