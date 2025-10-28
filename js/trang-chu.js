@@ -49,16 +49,16 @@ function changeContent(type, event) {
   let newSrc = "";
   switch (type) {
     case "weddings":
-      newSrc = "../img/Trang-chu/ah1.avif"; // đúng tên file bạn có
+      newSrc = "img/Trang-chu/ah1.avif"; // đúng tên file bạn có
       break;
     case "meetings":
-      newSrc = "../img/trang-chu/ah2.avif";
+      newSrc = "img/trang-chu/ah2.avif";
       break;
     case "penfolds":
-      newSrc = "../img/Trang-chu/ah3.avif";
+      newSrc = "img/Trang-chu/ah3.avif";
       break;
     case "dining":
-      newSrc = "../img/Trang-chu/ah4.avif";
+      newSrc = "img/Trang-chu/ah4.avif";
       break;
   }
 
