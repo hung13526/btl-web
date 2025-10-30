@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InterContinental Hanoi Westlake</title>
-    <link rel="stylesheet" href="css/trang-chu.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  </head>
-  <body>
-    <!-- Header -->
-    <!-- Topbar -->
-    <div class="topbar">
-      <!-- Bên trái -->
-      <div class="logo">
-        <img src="img/Trang-chu/logoks.jpg" alt="Logo khách sạn">
-        <span>INTERCONTINENTAL<br> HANOI WESTLAKE</span>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InterContinental Hanoi Westlake</title>
+  <link rel="stylesheet" href="css/trang-chu.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-      <!-- Bên phải -->
-      <div class="right-section">
-        <div class="contact-icons">
-          <div class="inbox">
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- Topbar -->
+  <div class="topbar">
+    <!-- Bên trái -->
+    <div class="logo">
+      <img src="img/Trang-chu/logoks.jpg" alt="Logo khách sạn">
+      <span>INTERCONTINENTAL<br> HANOI WESTLAKE</span>
+    </div>
+
+    <!-- Bên phải -->
+    <div class="right-section">
+      <div class="contact-icons">
+        <div class="inbox">
           <script src="https://uhchat.net/code.php?f=99647b"></script>
         </div>
-          <a href="tel:+84000000000">📞 00 612 8317 6253 - Trò chuyện với chúng tôi</a>
-        </div>
-        <div class="login-buttons">
-          <a href="#" id="openLogin">Đăng nhập</a> / 
-          <a href="#" id="openRegister">Tham gia</a>
-        </div>
+        <a href="tel:+84000000000">📞 00 612 8317 6253 - Trò chuyện với chúng tôi</a>
+      </div>
+      <div class="login-buttons">
+        <a href="#" id="openLogin">Đăng nhập</a> /
+        <a href="#" id="openRegister">Tham gia</a>
       </div>
     </div>
+  </div>
 
-    <!-- Popup Modal -->
-    <div id="loginModal" class="modal">
-      <div class="modal-content">
-        <span id="closeModal" class="close">&times;</span>
+  <!-- Popup Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
 
-        <!-- Form đăng nhập -->
-        <div id="loginForm">
-          <h2>Đăng nhập</h2>
-          <form>
-            <input type="text" placeholder="Tên đăng nhập" required>
-            <input type="password" placeholder="Mật khẩu" required>
-            <button type="submit">Đăng nhập</button>
-          </form>
-          <p>Chưa có tài khoản? <a href="#" id="switchToRegister">Đăng ký</a></p>
-        </div>
+      <!-- Form đăng nhập -->
+      <div id="loginForm">
+        <h2>Đăng nhập</h2>
+        <form>
+          <input type="text" placeholder="Tên đăng nhập" required>
+          <input type="password" placeholder="Mật khẩu" required>
+          <button type="submit">Đăng nhập</button>
+        </form>
+        <p>Chưa có tài khoản? <a href="#" id="switchToRegister">Đăng ký</a></p>
+      </div>
 
-        <!-- Form đăng ký -->
-        <div id="registerForm" style="display:none;">
-          <h2>Đăng ký</h2>
-          <form>
-            <input type="text" placeholder="Tên đăng nhập" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Mật khẩu" required>
-            <button type="submit">Đăng ký</button>
-          </form>
-          <p>Đã có tài khoản? <a href="#" id="switchToLogin">Đăng nhập</a></p>
-        </div>
+      <!-- Form đăng ký -->
+      <div id="registerForm" style="display:none;">
+        <h2>Đăng ký</h2>
+        <form>
+          <input type="text" placeholder="Tên đăng nhập" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Mật khẩu" required>
+          <button type="submit">Đăng ký</button>
+        </form>
+        <p>Đã có tài khoản? <a href="#" id="switchToLogin">Đăng nhập</a></p>
       </div>
     </div>
-    <!--nav-->
-      <nav>
-         <ul>
-            <!-- Icon ngôi nhà -->
-            <li>
-                <a href="index.html">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-            </li>
-          <li><a href="pages/Phong.html">Phòng Ở</a></li>
-          <li><a href="pages/TienNghi.html">Tiện nghi</a></li>
-          <li><a href="pages/an-uong.html">Ăn Uống</a></li>
-          <li><a href="pages/hinhhanh.html">Hình ảnh</a></li>
-          <li><a href="pages/offer.html">Khách Đoàn & Sự Kiện</a></li>
-        </ul>
-        <button class="btn">Xem giá</button>
-      </nav>
-    </header>
+  </div>
+  <!--nav-->
+  <nav>
+    <ul>
+      <!-- Icon ngôi nhà -->
+      <li>
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i>
+        </a>
+      </li>
+      <li><a href="pages/Phong.html">Phòng Ở</a></li>
+      <li><a href="pages/TienNghi.html">Tiện nghi</a></li>
+      <li><a href="pages/an-uong.html">Ăn Uống</a></li>
+      <li><a href="pages/hinhhanh.html">Hình ảnh</a></li>
+      <li><a href="pages/offer.html">Khách Đoàn & Sự Kiện</a></li>
+    </ul>
+    <button class="btn">Xem giá</button>
+  </nav>
+  </header>
 
-    <!-- Hero section -->
-    <section class="hero">
-      <img src="img/Trang-chu/anh_nen.webp">
+  <!-- Hero section -->
+  <section class="hero">
+    <img src="img/Trang-chu/anh_nen.webp">
 
 
-      <div class="hero-overlay">
-        <h1>InterContinental<br>Hanoi Westlake</h1>
+    <div class="hero-overlay">
+      <h1>InterContinental<br>Hanoi Westlake</h1>
 
-        <!-- Ô đặt phòng -->
+      <!-- Ô đặt phòng -->
       <div class="booking-box">
         <div class="booking-item">
           <label>1 ĐÊM</label>
@@ -119,88 +121,94 @@
           <button class="btn">Xem giá</button>
         </div>
       </div>
-    </section>
+  </section>
 
-    
-    <section class="announcement">
-      <div class="container">
-        <strong>Thông báo quan trọng:</strong>
-        <span>
-          Chính sách trẻ em & người thêm, không bao gồm trong giá:
-          Trẻ 0-11 tuổi: Miễn phí nếu không cần giường phụ.
-          Từ 12 tuổi trở lên: Phụ thu 46 USD/người/đêm. Phụ thu 91 USD/người/đêm với gói Ăn sáng & Tối. Một giường phụ sẽ được cung cấp miễn phí nếu cần.
-          Đêm thưởng: Giá áp dụng cho 2 khách, khách thứ 3 bắt buộc phụ thu 46 USD/đêm. 
-        </span>
+
+  <section class="announcement">
+    <div class="container">
+      <strong>Thông báo quan trọng:</strong>
+      <span>
+        Chính sách trẻ em & người thêm, không bao gồm trong giá:
+        Trẻ 0-11 tuổi: Miễn phí nếu không cần giường phụ.
+        Từ 12 tuổi trở lên: Phụ thu 46 USD/người/đêm. Phụ thu 91 USD/người/đêm với gói Ăn sáng & Tối. Một giường phụ sẽ
+        được cung cấp miễn phí nếu cần.
+        Đêm thưởng: Giá áp dụng cho 2 khách, khách thứ 3 bắt buộc phụ thu 46 USD/đêm.
+      </span>
+    </div>
+  </section>
+
+
+  <!-- Info Section -->
+  <section class="rating">
+    <div class="rating1">
+      <h2>Khách sạn sang trọng ven hồ mang tính biểu tượng của Hà Nội</h2>
+      <span class="stars">⭐⭐⭐⭐⭐</span>
+      <span class="score">4.5</span>
+      <a href="#">(2045 đánh giá)</a>
+    </div>
+  </section>
+  <!-- Mô tả -->
+  <section class="about">
+    <p>
+      InterContinental Hanoi Westlake là khách sạn mang tính biểu tượng tại quận Tây Hồ sôi động, mang đến cho du khách
+      những phòng nghỉ sang trọng cùng dịch vụ Club InterContinental riêng biệt. Trải nghiệm ẩm thực từng đoạt nhiều
+      giải thưởng tại Nhà hàng Saigon hoặc ngắm hoàng hôn tuyệt đẹp tại Sunset Bar – quán bar duy nhất trên mặt hồ của
+      Hà Nội. Khách sạn chỉ cách các điểm tham quan nổi tiếng vài phút, đồng thời mang đến không gian nghỉ dưỡng yên
+      bình bên hồ thơ mộng.
+    </p>
+
+    <!-- Tiện ích -->
+    <div class="amenities">
+      <div class="amenity">🧹 Dọn phòng hàng ngày</div>
+      <div class="amenity">🅿 Bãi đỗ xe trong khuôn viên</div>
+      <div class="amenity">📶 Wi-Fi</div>
+      <div class="amenity">🏋️ Trung tâm thể hình</div>
+      <div class="amenity">🍳 Bếp đầy đủ tiện nghi</div>
+      <div class="amenity">🏊 Hồ bơi</div>
+      <div class="amenity">🍽 6 nhà hàng trong khuôn viên</div>
+    </div>
+  </section>
+
+  <!-- Accommodations -->
+  <section class="accommodations">
+    <h2>Hạng phòng</h2>
+    <div class="accom-scroll">
+      <div class="accom-item">
+        <img src="img/Trang-chu/Two-Bedroom-Suite.avif" alt="Suite 2 phòng ngủ">
+        <p>Suite 2 phòng ngủ</p>
+        <button class="select-btn">Chọn ngày</button>
       </div>
-    </section>
-
-
-    <!-- Info Section -->
-    <section class="rating">
-      <div class="rating1">
-        <h2>Khách sạn sang trọng ven hồ mang tính biểu tượng của Hà Nội</h2>
-        <span class="stars">⭐⭐⭐⭐⭐</span>
-        <span class="score">4.5</span>
-        <a href="#">(2045 đánh giá)</a>
+      <div class="accom-item">
+        <img src="img/Trang-chu/Classic-Rooms.avif" alt="Phòng Classic">
+        <p>Phòng Classic</p>
+        <button class="select-btn">Chọn ngày</button>
       </div>
-    </section>
-    <!-- Mô tả -->
-    <section class="about">
-      <p>
-        InterContinental Hanoi Westlake là khách sạn mang tính biểu tượng tại quận Tây Hồ sôi động, mang đến cho du khách những phòng nghỉ sang trọng cùng dịch vụ Club InterContinental riêng biệt. Trải nghiệm ẩm thực từng đoạt nhiều giải thưởng tại Nhà hàng Saigon hoặc ngắm hoàng hôn tuyệt đẹp tại Sunset Bar – quán bar duy nhất trên mặt hồ của Hà Nội. Khách sạn chỉ cách các điểm tham quan nổi tiếng vài phút, đồng thời mang đến không gian nghỉ dưỡng yên bình bên hồ thơ mộng.
-      </p>
+      <div class="accom-item">
+        <img src="img/Trang-chu/Presidential-Suite.jpg" alt="Suite Tổng thống">
+        <p>Suite Tổng thống</p>
+        <button class="select-btn">Chọn ngày</button>
+      </div>
+      <div class="accom-item">
+        <img src="img/Trang-chu/Junior-Suite.avif" alt="Junior Suite">
+        <p>Junior Suite</p>
+        <button class="select-btn">Chọn ngày</button>
+      </div>
+      <div class="accom-item">
+        <img src="img/Trang-chu/One-Bedroom-Suite.avif" alt="Suite 1 phòng ngủ">
+        <p>Suite 1 phòng ngủ</p>
+        <button class="select-btn">Chọn ngày</button>
+      </div>
+      <div class="accom-item">
+        <img src="img/Trang-chu/Three-Bedroom-overwater-Pavilion-Suite.avif"
+          alt="Suite Pavilion 3 phòng ngủ trên mặt hồ">
+        <p>Suite Pavilion 3 phòng ngủ trên mặt hồ</p>
+        <button class="select-btn">Chọn ngày</button>
+      </div>
+    </div>
+  </section>
+
   
-      <!-- Tiện ích -->
-      <div class="amenities">
-        <div class="amenity">🧹 Dọn phòng hàng ngày</div>
-        <div class="amenity">🅿 Bãi đỗ xe trong khuôn viên</div>
-        <div class="amenity">📶 Wi-Fi</div>
-        <div class="amenity">🏋️ Trung tâm thể hình</div>
-        <div class="amenity">🍳 Bếp đầy đủ tiện nghi</div>
-        <div class="amenity">🏊 Hồ bơi</div>
-        <div class="amenity">🍽 6 nhà hàng trong khuôn viên</div>
-      </div>
-    </section>
-
-    <!-- Accommodations -->
-    <section class="accommodations">
-      <h2>Hạng phòng</h2>
-      <div class="accom-scroll">
-        <div class="accom-item">
-          <img src="img/Trang-chu/Two-Bedroom-Suite.avif" alt="Suite 2 phòng ngủ">
-          <p>Suite 2 phòng ngủ</p>
-          <button class="select-btn">Chọn ngày</button>
-        </div>
-        <div class="accom-item">
-          <img src="img/Trang-chu/Classic-Rooms.avif" alt="Phòng Classic">
-          <p>Phòng Classic</p>
-          <button class="select-btn">Chọn ngày</button>
-        </div>
-        <div class="accom-item">
-          <img src="img/Trang-chu/Presidential-Suite.jpg" alt="Suite Tổng thống">
-          <p>Suite Tổng thống</p>
-          <button class="select-btn">Chọn ngày</button>
-        </div>
-        <div class="accom-item">
-          <img src="img/Trang-chu/Junior-Suite.avif" alt="Junior Suite">
-          <p>Junior Suite</p>
-          <button class="select-btn">Chọn ngày</button>
-        </div>
-        <div class="accom-item">
-          <img src="img/Trang-chu/One-Bedroom-Suite.avif" alt="Suite 1 phòng ngủ">
-          <p>Suite 1 phòng ngủ</p>
-          <button class="select-btn">Chọn ngày</button>
-        </div>
-        <div class="accom-item">
-          <img src="img/Trang-chu/Three-Bedroom-overwater-Pavilion-Suite.avif" alt="Suite Pavilion 3 phòng ngủ trên mặt hồ">
-          <p>Suite Pavilion 3 phòng ngủ trên mặt hồ</p>
-          <button class="select-btn">Chọn ngày</button>
-        </div>
-      </div>
-    </section>
-
-  <footer>
-    <div class="footer-info">
+    <div class="info">
       <div class="col">
         <p><strong>Đặt chỗ:</strong> 00 612 8317 6253</p>
         <p><strong>Lễ tân:</strong> 84-24-62708888</p>
@@ -216,23 +224,23 @@
         <p><strong>Độ tuổi tối thiểu để nhận phòng:</strong> 18</p>
       </div>
     </div>
-   
+
 
     <!-- Phần nội dung chính -->
     <div class="content">
       <!-- Menu -->
-<div class="tieude">
-  <h2>The highlights</h2>
-   <a href="javascript:void(0)" onclick="changeContent('weddings', event)">WEDDINGS</a>
-  <a href="javascript:void(0)" onclick="changeContent('meetings', event)">MEETINGS</a>
-  <a href="javascript:void(0)" onclick="changeContent('penfolds', event)">PENFOLDS</a>
-  <a href="javascript:void(0)" onclick="changeContent('dining', event)">DINING</a>
-</div>
-<div class="image-box">
-  <img id="mainImage" src="img/Trang-chu/ah1.avif" alt="Highlight" class="active">
-</div>
+      <div class="tieude">
+        <h2>The highlights</h2>
+        <a href="javascript:void(0)" onclick="changeContent('weddings', event)">WEDDINGS</a>
+        <a href="javascript:void(0)" onclick="changeContent('meetings', event)">MEETINGS</a>
+        <a href="javascript:void(0)" onclick="changeContent('penfolds', event)">PENFOLDS</a>
+        <a href="javascript:void(0)" onclick="changeContent('dining', event)">DINING</a>
+      </div>
+      <div class="image-box">
+        <img id="mainImage" src="img/Trang-chu/ah1.avif" alt="Highlight" class="active">
+      </div>
     </div>
-<div class="container">
+    <div class="container">
       <!-- Khám phá -->
       <section class="explore-section">
         <h2 class="section-title">Khám phá InterContinental Hanoi Westlake</h2>
@@ -319,105 +327,105 @@
       </section>
     </div>
     <div class="breadcrumb">
-    <span class="home-icon">🏠</span>
-    <span class="divider"></span>
-    <a href="index.html">Hanoi Khách sạn</a>
-    <hr>
-  </div>
-   <!-- Bản đồ -->
-  <div class="map">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7446.715690307023!2d105.82714824832158!3d21.058365245730304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aa5504cf4f8d%3A0x38355eb7fe4e696d!2sInterContinental%20Hanoi%20Westlake%20by%20IHG!5e0!3m2!1sen!2sus!4v1757723138687!5m2!1sen!2sus"
-      style="border:0; width:100%; height:400px;"
-      allowfullscreen
-      loading="lazy">
-    </iframe>
-  </div>
+      <span class="home-icon">🏠</span>
+      <span class="divider"></span>
+      <a href="index.html">Hanoi Khách sạn</a>
+      <hr>
+    </div>
+    <!-- Bản đồ -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7446.715690307023!2d105.82714824832158!3d21.058365245730304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aa5504cf4f8d%3A0x38355eb7fe4e696d!2sInterContinental%20Hanoi%20Westlake%20by%20IHG!5e0!3m2!1sen!2sus!4v1757723138687!5m2!1sen!2sus"
+        style="border:0; width:100%; height:400px;" allowfullscreen loading="lazy">
+      </iframe>
+    </div>
 
+    <!-- Footer -->
     <footer>
-    <div class="footer-container">
-      <div class="footer-column">
-        <h4>Phương tiện truyền thông xã hội</h4>
-        <div class="social-icons">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Phương tiện truyền thông xã hội</h4>
           <div class="social-icons">
-  <a href="https://www.facebook.com/share/1G617c1qgd/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-facebook-f"></i>
-  </a>
-  <a href="https://m.me/Dinh Danh Nam" target="_blank" rel="noopener noreferrer">
-  <i class="fa-brands fa-facebook-messenger"></i>
-</a>
+            <a href="https://www.facebook.com/share/1G617c1qgd/?mibextid=wwXIfr" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://m.me/Dinh Danh Nam" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook-messenger"></i>
+            </a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
 
-  <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-  <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</div>
+        <div class="footer-column">
+          <h4>Công ty</h4>
+          <ul>
+            <li><a href="#">Giới thiệu về InterContinental</a></li>
+            <li><a href="#">Truy cập cho tất cả</a></li>
+            <li><a href="#">Trò chuyện với chúng tôi</a></li>
+            <li><a href="#">InterContinental Mobile</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+          </ul>
+        </div>
 
+        <div class="footer-column">
+          <ul>
+            <li><a href="#">Thương hiệu toàn cầu IHG</a></li>
+            <li><a href="#">Phát triển khách sạn</a></li>
+            <li><a href="#">Danh bạ khách sạn</a></li>
+            <li><a href="#">Chương trình liên kết</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <ul>
+            <li><a href="#">Giới thiệu về IHG</a></li>
+            <li><a href="#">Trung tâm Quyền riêng tư và Cookie</a></li>
+            <li><a href="#">Không bán hoặc chia sẻ thông tin cá nhân của tô</a></li>
+            <li><a href="#">Lựa chọn quảng cáo</a></li>
+            <li><a href="#">Sự nghiệp tại IHG</a></li>
+            <li><a href="#">Nhận xét</a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="footer-column">
-        <h4>Công ty</h4>
-        <ul>
-          <li><a href="#">Giới thiệu về InterContinental</a></li>
-          <li><a href="#">Truy cập cho tất cả</a></li>
-          <li><a href="#">Trò chuyện với chúng tôi</a></li>
-          <li><a href="#">InterContinental Mobile</a></li>
-          <li><a href="#">Điều khoản sử dụng</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <ul>
-          <li><a href="#">Thương hiệu toàn cầu IHG</a></li>
-          <li><a href="#">Phát triển khách sạn</a></li>
-          <li><a href="#">Danh bạ khách sạn</a></li>
-          <li><a href="#">Chương trình liên kết</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <ul>
-          <li><a href="#">Giới thiệu về IHG</a></li>
-          <li><a href="#">Trung tâm Quyền riêng tư và Cookie</a></li>
-          <li><a href="#">Không bán hoặc chia sẻ thông tin cá nhân của tô</a></li>
-          <li><a href="#">Lựa chọn quảng cáo</a></li>
-          <li><a href="#">Sự nghiệp tại IHG</a></li>
-          <li><a href="#">Nhận xét</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="final-footer">
-      <div class="best-price">
-        <h3>
-          BEST PRICE<br>
-          <span>GUARANTEE</span>
-        </h3>
-        <p>Đặt chỗ trực tuyến hoặc gọi điện:<br><strong>00 612 8317 6253</strong></p>
-      </div>
-
-      <div class="download-apps">
-        <div class="app-links">
-          <a href="#">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-          </a>
-          <a href="#">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-          </a>
+      <div class="final-footer">
+        <div class="best-price">
+          <h3>
+            BEST PRICE<br>
+            <span>GUARANTEE</span>
+          </h3>
+          <p>Đặt chỗ trực tuyến hoặc gọi điện:<br><strong>00 612 8317 6253</strong></p>
         </div>
-        <p>
+
+        <div class="download-apps">
+          <div class="app-links">
+            <a href="#">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="App Store">
+            </a>
+            <a href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play">
+            </a>
+          </div>
+          <p>
             Tải xuống ứng dụng IHG One Rewards<br>
-          <a href="#" style="font-weight:bold; text-decoration:underline;">Tìm hiểu thêm</a> về đặt phòng nhanh và Phần thưởng khi đang di chuyển
-        </p>
+            <a href="#" style="font-weight:bold; text-decoration:underline;">Tìm hiểu thêm</a> về đặt phòng nhanh và
+            Phần thưởng khi đang di chuyển
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="description">
-        Để đảm bảo mang đến cho bạn trải nghiệm tốt nhất trên trang web, chúng tôi sử dụng bản dịch máy cho một số phần nội dung được giới thiệu trên trang này.    </div>
-    <div class="copyright">
-      © 2025 IHG. Bảo lưu mọi quyền. Hầu hết các khách sạn đều do cá nhân sở hữu và vận hành.
-    </div>
-  </footer>
-  <script src="js/trang-chu.js"></script>
-  </footer>
-  </body>
+      <div class="description">
+        Để đảm bảo mang đến cho bạn trải nghiệm tốt nhất trên trang web, chúng tôi sử dụng bản dịch máy cho một số phần
+        nội dung được giới thiệu trên trang này. </div>
+      <div class="copyright">
+        © 2025 IHG. Bảo lưu mọi quyền. Hầu hết các khách sạn đều do cá nhân sở hữu và vận hành.
+      </div>
+    </footer>
+    <script src="js/trang-chu.js"></script>
+</body>
+
 </html>

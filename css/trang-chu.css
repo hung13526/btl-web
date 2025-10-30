@@ -400,17 +400,8 @@ nav .btn {
   display: block;
 }
 
-/* Footer */
-footer {
-  background: #f9f9f9;
-  padding: 30px;
-  margin-top: 20px;
-  border-top: 1px solid #ddd;
-  text-align: center;
-}
 
-/* Footer-info: 3 cột */
-.footer-info {
+.info {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -420,7 +411,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.footer-info .col {
+.info .col {
   flex: 1;
   min-width: 200px;
   padding: 0 15px;
@@ -428,16 +419,16 @@ footer {
   color: #333;
 }
 
-.footer-info .col:not(:last-child) {
+.info .col:not(:last-child) {
   border-right: 1px solid #999;
 }
 
-.footer-info a {
+.info a {
   color: #333;
   text-decoration: none;
 }
 
-.footer-info a:hover {
+.info a:hover {
   color: #0073e6;
   text-decoration: underline;
 }
@@ -454,6 +445,7 @@ footer {
 /* Menu bên trái */
 .tieude {
   flex: 1;
+  padding: 10px 20px;
 }
 
 .tieude h2 {
@@ -643,7 +635,7 @@ h2.section-title {
     gap: 10px;
     text-align: center;
   }
-  .footer-info {
+  .info {
     padding: 30px 10px 15px;
     flex-direction: column;
     text-align: center;
